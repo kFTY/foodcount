@@ -1,12 +1,23 @@
-01.12.2016	0	x	x			x								x			x		x	x													x						x		x										x					x		x													
-02.12.2016	0	x			x					x				x			x		x				x						x				x														x	x			x						x														
-03.12.2016	0		x				x					x		x		x	x																														x												x												
-04.12.2016	0											x		x																			x																									x		x	x										
-05.12.2016	0	x	x					x						x				x		x									x									x			x															x						x	x								
-06.12.2016	0		x		x	x	x			x				x		x													x				x					x			x						x									x							x	x							
-07.12.2016	0					x								x								x																x	x		x						x									x	x						x		x	x					
-08.12.2016	0				x					x				x						x			x						x									x			x						x									x					x		x								
-09.12.2016	0					x						x		x								x																x	x		x		x			x							x										x								
-10.12.2016	0	x					x						x	x		x																						x			x						x										x						x								
-11.12.2016	0						x					x		x				x		x																																				x					x		x								
-12.12.2016	0					x	x															x								x								x			x						x	x													x							x			
+01.12.2016	0	x	x			x								x			x		x	x													x						x		x										x					x		x														
+02.12.2016	0	x			x					x				x			x		x				x						x				x														x	x			x						x															
+03.12.2016	0		x				x					x		x		x	x																														x												x													
+04.12.2016	0											x		x																			x																									x		x	x											
+05.12.2016	0	x	x					x						x				x		x									x									x			x															x						x	x									
+06.12.2016	0		x		x	x	x			x				x		x													x				x					x			x						x									x							x	x								
+07.12.2016	0					x								x								x																x	x		x						x									x	x						x		x	x						
+08.12.2016	0				x					x				x						x			x						x									x			x						x									x					x		x									
+09.12.2016	0					x						x		x								x																x	x		x		x			x							x										x									
+10.12.2016	0	x					x						x	x		x																						x			x						x										x						x									
+11.12.2016	0						x					x		x				x		x																																				x					x		x									
+12.12.2016	0					x	x															x								x								x			x						x	x													x						x					
+13.12.2016	0				x	x		x						x		x													x		x										x						x									x							x									
+14.12.2016	0	x				x							x									x							x												x						x				x		x			x												x				
+15.12.2016	0	x	x				x							x																									x		x						x				x		x			x							x									
+16.12.2016	0	x	x		x	x								x								x																			x						x	x			x					x					x		x									
+17.12.2016	0		x		x		x							x		x																									x						x														x		x					x				
+18.12.2016	0							x						x		x																									x						x	x					x								x		x									
+19.12.2016	0	x	x			x								x		x		x				x																	x		x						x	x					x			x																
+20.12.2016	0	x	x		x	x										x						x													x						x						x	x					x			x																
+21.12.2016	0	x	x				x		x		x			x	x																										x						x	x					x			x							x	x				x				
+22.12.2016	0					x			x													x																			x						x	x					x											x					x			
+23.12.2016	0	x	x			x	x		x													x																			x						x	x								x					x			x								
