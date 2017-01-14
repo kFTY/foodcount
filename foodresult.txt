@@ -1,12 +1,10 @@
-24.12.2016	0	x	x		x		x		x	x		x		x																											x						x	x							x	x	x						x	x				x							
-25.12.2016	0	x	x		x	x	x			x		x		x		x						x																	x		x						x	x									x							x											
-26.12.2016	0	x	x			x						x		x		x						x																			x						x	x					x				x						x												
-27.12.2016	0	x	x	x	x	x	x			x		x		x								x																			x						x	x									x						x	x						x					
-28.12.2016	0	x	x			x			x			x		x	x							x																			x						x	x								x	x							x				x		x					
-29.12.2016	0	x					x		x			x				x																							x								x	x								x	x							x							x	x			
-30.12.2016	0				x	x	x			x		x				x						x																									x	x		x							x				x							x			x				
-31.12.2016	0	x	x				x					x		x		x							x																								x	x									x						x								x		x		
-01.01.2017	0	x	x			x								x								x															x				x						x	x									x							x					x						
-02.01.2017	0		x			x	x	x	x																																x						x	x								x	x							x							x				
-03.01.2017	0		x	x	x	x	x	x		x		x		x		x																									x						x	x								x	x											x							
-04.01.2017	0	x		x	x				x	x		x		x																																			x							x													x					x	
+05.01.2017	0	x	x		x				x	x																													x																	x	x			x	x							x				x			x	x						
+06.01.2017	0		x			x								x		x						x																			x		x						x				x			x				x				x					x	x												
+07.01.2017	0		x		x		x			x						x				x																					x		x							x			x			x												x		x												
+08.01.2017	0	x	x						x			x		x																														x									x																x			x				x						
+09.01.2017	0				x	x				x			x	x																											x		x							x						x	x				x							x														
+10.01.2017	0		x		x		x			x		x																																									x			x	x							x				x									x					
+11.01.2017	0		x		x						x			x		x							x		x																x		x										x			x												x	x	x							x	x	x			
+12.01.2017	0	x	x			x			x		x			x								x			x																x															x	x											x	x	x							x					
+13.01.2017	0	x	x				x		x		x			x		x									x																									x						x	x							x				x	x	x							x			x		
+14.01.2017	0				x	x					x	x		x		x						x				x															x		x			x				x						x	x							x				x		x					x					x	x	

@@ -6,7 +6,7 @@
 5，从foodresult.txt中复制结果到GoogleSheet的食材列表
 '''
 # 不必报错的词汇
-forbid = ['呕吐','糕', '糊','上午', '下午','松', '软', '丸', '一丁点', '汤','丁', '煎','用的', '牌的油菜花油', '葵花籽油', '可能有鸡蛋', '粥', "一共", "晚上", "中午", "早上", "水", "没吃", "若干", "一点", "条", "酵母", "带蛋清", "炒", "水煮蛋打碎", "嘴边出现荨麻疹", "一点蛋清", ""]
+forbid = ['饼', '瓣', '约','呕吐','糕', '糊','上午', '下午','松', '软', '丸', '一丁点', '汤','丁', '煎','用的', '牌的油菜花油', '葵花籽油', '可能有鸡蛋', '粥', "一共", "晚上", "中午", "早上", "水", "没吃", "若干", "一点", "条", "酵母", "带蛋清", "炒", "水煮蛋打碎", "嘴边出现荨麻疹", "一点蛋清", ""]
 errorlist = []
 fooddata = open("foodtest.txt", "r", -1, 'utf-8')
 data = fooddata.readlines()  # read everything in data
@@ -15,7 +15,7 @@ data = fooddata.readlines()  # read everything in data
 datelist = []
 dateindex = []
 for lines in data:
-    if len(lines) == 11 and lines[6] == '2':
+    if len(lines) >= 11 and lines[6] == '2' and lines[7] == '0':
         datelist.append(lines)
         # find Date text for A columm
         dateindex.append(data.index(lines))
