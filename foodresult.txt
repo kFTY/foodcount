@@ -1,10 +1,7 @@
-05.01.2017	0	x	x		x				x	x																													x																	x	x			x	x							x				x			x	x						
-06.01.2017	0		x			x								x		x						x																			x		x						x				x			x				x				x					x	x												
-07.01.2017	0		x		x		x			x						x				x																					x		x							x			x			x												x		x												
-08.01.2017	0	x	x						x			x		x																														x									x																x			x				x						
-09.01.2017	0				x	x				x			x	x																											x		x							x						x	x				x							x														
-10.01.2017	0		x		x		x			x		x																																									x			x	x							x				x									x					
-11.01.2017	0		x		x						x			x		x							x		x																x		x										x			x												x	x	x							x	x	x			
-12.01.2017	0	x	x			x			x		x			x								x			x																x															x	x											x	x	x							x					
-13.01.2017	0	x	x				x		x		x			x		x									x																									x						x	x							x				x	x	x							x			x		
-14.01.2017	0				x	x					x	x		x		x						x				x															x		x			x				x						x	x							x				x		x					x					x	x	
+25.01.2017	0		x		x		x			x						x									x		x														x		x							x														x				x	x		x																x		x		x		x				
+26.01.2017	0		x		x	x								x		x				x		x			x																								x														x	x					x	x	x										x								x			x					
+27.01.2017	0				x				x			x		x											x	x															x																							x				x	x		x																x				x			x	x		
+28.01.2017	0				x				x	x		x				x				x					x	x	x														x		x						x																					x	x																					x	x				
+29.01.2017	0				x	x			x			x				x						x			x																x																							x				x			x		x			x											x										
+30.01.2017	0		x						x							x		x		x		x			x		x														x		x						x												x										x						x										x					x	x		x	x	
+31.01.2017	0			x	x				x			x		x						x					x		x														x		x						x															x						x	x						x														x	x	x		x		
