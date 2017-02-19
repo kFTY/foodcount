@@ -6,7 +6,8 @@
 5，从foodresult.txt中复制结果到GoogleSheet的食材列表
 '''
 # 不必报错的词汇
-forbid = ['干重', '不喜欢吃', '吐了一点', '皮', '卷', '片', '去', '参加联合敬拜', '左右','饼', '瓣', '约','呕吐','糕', '糊','上午', '下午','松', '软', '丸', '一丁点', '汤','丁', '煎','用的', '牌的油菜花油', '葵花籽油', '可能有鸡蛋', '粥', "一共", "晚上", "中午", "早上", "水", "没吃", "若干", "一点", "条", "酵母", "带蛋清", "炒", "水煮蛋打碎", "嘴边出现荨麻疹", "一点蛋清", ""]
+forbid = ['番茄面', '泥', '干重', '不喜欢吃', '吐了一点', '皮', '卷', '片', '去', '参加联合敬拜', '左右', '饼', '瓣', '约', '呕吐', '糕', '糊', '上午', '下午', '松', '软', '丸', '一丁点', '汤',
+          '丁', '煎', '用的', '牌的油菜花油', '葵花籽油', '可能有鸡蛋', '粥', "一共", "晚上", "中午", "早上", "水", "没吃", "若干", "一点", "条", "酵母", "带蛋清", "炒", "水煮蛋打碎", "嘴边出现荨麻疹", "一点蛋清", ""]
 errorlist = []
 fooddata = open("foodtest.txt", "r", -1, 'utf-8')
 data = fooddata.readlines()  # read everything in data
@@ -46,12 +47,18 @@ for food in fdict:
     food = str("".join(food))
     fdict[n] = food
     n += 1
-#print (fdict)
+
 fooddict.close()
+
+# A list of ord(letter)
+letterlist = [97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122,
+              65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 220, 252, 246, 214, 228, 196, 223]
+
+# Delete words that neither CHN nor ENG nor DE
 
 
 def delete_non_chn(word):
-    if ord(word) > 11904 and ord(word) < 40900:
+    if (ord(word) > 11904 and ord(word) < 40900) or (ord(word) in letterlist):
         return word
     else:
         return "\n"
@@ -82,16 +89,16 @@ for day in range(0, len(datelist)):
     # go through all date
     wordsofday = []
     for line in range(dateindex[day], dateindex[(day + 1)]):
-        #print (ord(data[line][0]))
+        # print (ord(data[line][0]))
         for i in range(0, len(data[line])):
 
-            #print (ord(data[line][i]))
+            # print (ord(data[line][i]))
             # ord can change word to numbers
             # next step: use number to judge if it is a chinese word
             # chinese range(11904,40900)
             wordsofday.append(delete_non_chn(data[line][i]))
 
-    #print (clean_words(wordsofday))
+    # print (clean_words(wordsofday))
     buffertxt = open("buffer.txt", "w", -1, "utf-8")
     buffertxt.write(clean_words(wordsofday))
     buffertxt.close()
@@ -108,7 +115,7 @@ for day in range(0, len(datelist)):
         foodlist[n] = food
         n += 1
     buffertxt.close()
-    #print (foodlist)
+    # print (foodlist)
 
     # now start to find positions for food: foodindex
     foodindex = []
@@ -128,8 +135,8 @@ for day in range(0, len(datelist)):
                 if foodlist[n] not in errorlist:
                     errorlist.append(foodlist[n])
 
-    #print (errorlist)
-    #print (foodindex)
+    # print (errorlist)
+    # print (foodindex)
 
     # use foodindex to build a txt file
     xmark = []
@@ -151,7 +158,7 @@ for day in range(0, len(datelist)):
     foodresult.write(str(s))
     foodresult.write('\n')
     foodresult.close()
-    #print (str(s))
+    # print (str(s))
 
 # report
 
