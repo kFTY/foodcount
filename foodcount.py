@@ -6,7 +6,9 @@
 5，从foodresult.txt中复制结果到GoogleSheet的食材列表
 '''
 # 不必报错的词汇
-forbid = ['羹','ml', 'ml左右', '猪','番茄面', '泥', '干重', '不喜欢吃', '吐了一点', '皮', '卷', '片', '去', '参加联合敬拜', '左右', '饼', '瓣', '约', '呕吐', '糕', '糊', '上午', '下午', '松', '软', '丸', '一丁点', '汤',
+import re
+
+forbid = ['羹', 'ml', 'ml左右', '猪', '番茄面', '泥', '干重', '不喜欢吃', '吐了一点', '皮', '卷', '片', '去', '参加联合敬拜', '左右', '饼', '瓣', '约', '呕吐', '糕', '糊', '上午', '下午', '松', '软', '丸', '一丁点', '汤',
           '丁', '煎', '用的', '牌的油菜花油', '葵花籽油', '可能有鸡蛋', '粥', "一共", "晚上", "中午", "早上", "水", "没吃", "若干", "一点", "条", "酵母", "带蛋清", "炒", "水煮蛋打碎", "嘴边出现荨麻疹", "一点蛋清", ""]
 errorlist = []
 fooddata = open("foodtest.txt", "r", -1, 'utf-8')
@@ -15,8 +17,9 @@ data = fooddata.readlines()  # read everything in data
 
 datelist = []
 dateindex = []
+
 for lines in data:
-    if len(lines) >= 11 and lines[6] == '2' and lines[7] == '0':
+    if re.match("(\d{2}).(\d{2}).(\d{4})", lines):
         datelist.append(lines)
         # find Date text for A columm
         dateindex.append(data.index(lines))
@@ -30,9 +33,8 @@ for date in datelist:
     datelist[n] = date
     n += 1
 
-#print (dateindex)
-fooddata.close()
 
+fooddata.close()
 foodresult = open("foodresult.txt", "w", -1, "utf-8")
 foodresult.write('')
 foodresult.close()
@@ -84,6 +86,7 @@ def clean_words(words):
         n += 1
     return s
 
+
 for day in range(0, len(datelist)):
     # for day in range(0,2):#test only 2 days
     # go through all date
@@ -128,9 +131,9 @@ for day in range(0, len(datelist)):
             try:
                 n = forbid.index(foodlist[n])
                 # if n >= 0:
-                #	print ("")
+                #   print ("")
                 # else:
-                #	print ("没有找到  "+foodlist[n])
+                #   print ("没有找到  "+foodlist[n])
             except:
                 if foodlist[n] not in errorlist:
                     errorlist.append(foodlist[n])
@@ -141,13 +144,13 @@ for day in range(0, len(datelist)):
     # use foodindex to build a txt file
     xmark = []
     foodresult = open("foodresult.txt", "a", -1, "utf-8")
-    writestr = [datelist[day], '	', "0", '	']
+    writestr = [datelist[day], '    ', "0", '   ']
     for n in range(0, len(fdict)):
         if n in foodindex:
             xmark.append("x")
-            xmark.append("	")
+            xmark.append("  ")
         else:
-            xmark.append("	")
+            xmark.append("  ")
     writestr += xmark
     n = 0
     s = ''
