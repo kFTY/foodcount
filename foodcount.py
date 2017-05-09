@@ -144,13 +144,13 @@ for day in range(0, len(datelist)):
     # use foodindex to build a txt file
     xmark = []
     foodresult = open("foodresult.txt", "a", -1, "utf-8")
-    writestr = [datelist[day], '    ', "0", '   ']
+    writestr = [datelist[day], '\t', "0", '\t']
     for n in range(0, len(fdict)):
         if n in foodindex:
             xmark.append("x")
-            xmark.append("  ")
+            xmark.append("\t")
         else:
-            xmark.append("  ")
+            xmark.append("\t")
     writestr += xmark
     n = 0
     s = ''
